@@ -8,10 +8,14 @@ body {
 }
 
 main {
-    background-color: crimson;
+   /* background-color: crimson; */
     height: 100vh;
 }
 
 .green {
     color: darkgreen;
+}
+
+footer p {
+    font-size: .8em;
 }
