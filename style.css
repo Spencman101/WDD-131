@@ -1,0 +1,17 @@
+selector {
+    property: value;
+}
+
+body {
+    font-size: 18px;
+    margin: 0;
+}
+
+main {
+    background-color: crimson;
+    height: 100vh;
+}
+
+.green {
+    color: darkgreen;
+}
