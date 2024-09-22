@@ -1,0 +1,47 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #006EB6;
+}
+
+main {
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: left;
+}
+
+.mission {
+    padding-top: 35px;
+}
+
+li {
+    padding-block: 10px;
+}
+
+img {
+    max-block-size: 150px;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+    
+}
+
+.dark h2 {
+    color:#00BCD4;
+}
