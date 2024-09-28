@@ -29,6 +29,15 @@
     .hide {
         display: contents;
     }
+    ul {
+        flex-direction: row;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -39,13 +48,12 @@ body {
     text-align: center;
     align-items: center;
     align-content: center;
-    margin: 0;
-    padding: 0;
 }
 
-a:link {
+ul {
     color: var(--accent-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
