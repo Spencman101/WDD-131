@@ -32,8 +32,7 @@ function newTask() {
 
 function removeTask(taskElement) {
   // Note the use of Array.filter to remove the element from our task array
-  // Notice also how we are using taskElement instead of document as our starting point?
-  // This will restrict our search to the element instead of searching the whole document.
+ // This will restrict our search to the element instead of searching the whole document.
   tasks = tasks.filter(
     (task) => task.detail != taskElement.querySelector('p').innerText
   );
