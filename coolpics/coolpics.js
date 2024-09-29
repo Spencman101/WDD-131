@@ -1,27 +1,27 @@
-const menuButton = document.querySelector(".menu-button");
-function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  menu.classList.toggle("hide");
-}
+const galleryImages = document.querySelectorAll('.gallery img');
+const viewer = document.querySelector('.viewer');
+const closeViewerButton = document.querySelector('.close-viewer');
 
-menuButton.addEventListener("click", toggleMenu);
+galleryImages.forEach(image => {
+    image.addEventListener('click', (e) => {
+        const fullImagePath = e.target.src.replace('sm', 'full');
+        viewer.querySelector('img').src = fullImagePath;
+        viewer.style.display = 'grid';  // Display the viewer
+    });
+});
+
+closeViewerButton.addEventListener('click', () => {
+    viewer.style.display = 'none';  // Hide the viewer when "X" is clicked
+});
 
 function handleResize() {
-    const menu = document.querySelector(".menu");
-    if (window.innerWidth > 1000) {
+  const menu = document.querySelector(".menu");
+  if (window.innerWidth > 1000) {
       menu.classList.remove("hide");
-    } else {
+  } else {
       menu.classList.add("hide");
-    }
   }
-  
-  handleResize();
-  window.addEventListener("resize", handleResize);
-
-
-function viewerTemplate(pic, alt) {
-  return `<div class="viewer">
-    <button class="close-viewer">X</button>
-    <img src="${pic}" alt="${alt}">
-    </div>`;
 }
+
+window.addEventListener("resize", handleResize);
+document.querySelector(".menu-button").addEventListener("click", toggleMenu);

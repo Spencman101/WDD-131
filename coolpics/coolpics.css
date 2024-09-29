@@ -32,6 +32,9 @@
     ul {
         flex-direction: row;
     }
+    .viewer {
+        padding: 20px;
+    }
 }
 
 * {
@@ -82,13 +85,6 @@ ul, main {
     font-size: 16px;
 }
 
-img {
-	max-width: 100%;
-    object-fit: cover;
-    border: 5px, solid, white;
-    box-shadow: 5px 5px 10px black;
-}
-
 button {
     pointer-events: none;
     background: none;
@@ -101,22 +97,36 @@ button {
 }
 
 .viewer {
+    display: none;
     position: fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.75);
-    grid-template: 1fr / 1fr 1fr;
-    color: var(--text-light);
-    max-height: 100%;
     z-index: 10;
+    justify-content: center;
+    align-items: center;
+    grid-template: 1fr / 1fr;
+    max-height: 100%;
+}
+
+
+.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 5px 5px 10px black;
 }
 
 .close-viewer {
-    grid-column: 1/2;
-    pointer-events: visible;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
 }
+
 
 .viewer img {
     grid-column: 2/2;
