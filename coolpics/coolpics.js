@@ -1,6 +1,7 @@
 const galleryImages = document.querySelectorAll('.gallery img');
 const viewer = document.querySelector('.viewer');
 const closeViewerButton = document.querySelector('.close-viewer');
+const menu = document.querySelector(".menu");
 
 galleryImages.forEach(image => {
     image.addEventListener('click', (e) => {
@@ -11,7 +12,6 @@ galleryImages.forEach(image => {
 });
 
 function handleResize() {
-  const menu = document.querySelector(".menu");
   if (window.innerWidth > 1000) {
       menu.classList.remove("hide");
   } else {
@@ -20,7 +20,6 @@ function handleResize() {
 }
 
 function toggleMenu() {
-    const menu = document.querySelector(".menu");
     menu.classList.toggle("hide")
 }
 
@@ -39,7 +38,8 @@ function viewHandler(event) {
 
 function closeViewer() {
     document.querySelector(".viewer")?.remove();
-}
+
+  }
 window.addEventListener("resize", handleResize);
-menu-buttom.addEventListener("click", toggleMenu);
+menu-button.addEventListener("click", toggleMenu);
 galleryImages.addEventListener("resize", handleResize)
