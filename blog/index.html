@@ -6,22 +6,25 @@
     <meta name="description" content="A small blog detailing books for kids and their info.">
     <meta name="author" content="Spencer Reynolds">
     <title>Book Blog</title>
-    <script src="blog.js"></script>
+    <script defer src="blog.js"></script>
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
     <header class="headline">
         <h1 class="title">Kids Read For Fun</h1>
+        <div class="skiptocontent">
+            <a href="#maincontent">skip to main content</a>
+          </div>
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Archive</a></li>
             <li><a href="#">Search</a></li>
         </ul>
     </header>
-    <main>
+    <main id="maincontent">
         <div class="book-post-1">
             <div class="identifiers">
-                <p>July 5, 2022</p>
+                <p id="date">July 5, 2022</p>
                 <p>10-14</p>
                 <p>Fantasy</p>
                 <p>****</p>
@@ -35,7 +38,7 @@
         <p class="fliters">Filter form will go here</p>
         <div class="book-post-2">
             <div class="identifiers">
-                <p>December 12, 2021</p>
+                <p id="date">December 12, 2021</p>
                 <p>12-16</p>
                 <p>Fantasy</p>
                 <p>⭐⭐⭐⭐</p>

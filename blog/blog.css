@@ -5,6 +5,7 @@
     --secondary-color: #461220;
     --accent-color: #283618;
     --text-color: #461220;
+    --text-white: #FEFAE0;
     --font: "Afacad Flux", sans-serif;
 }
 
@@ -80,12 +81,39 @@ main {
     padding-right: 10px;
 }
 
-.info {
-    grid-column: 2/3;
-    text-align: center;
+.identifiers #date {
+    font-size: 18px;
 }
 
+.info {
+    margin-top: -5px;
+    grid-column: 2/3;
+    text-align: left;
+}
 
+.info img {
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.skiptocontent a {
+	/* set the element to absolute positioning */
+    position: absolute;
+	/* move it off screen */
+	/* Make sure it will be on the left edge of the screen */
+    top: -40px;
+	/* Change the background and color to something that stands out */
+    background-color: var(--accent-color);
+    color: var(--text-white);
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+    top: 0px;
+}
 
 
 

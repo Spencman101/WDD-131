@@ -25,3 +25,13 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+document.body.addEventListener('keydown', function(event) {
+	if (event.key === 'Tab' || event.keyCode === 9) {
+		document.getElementById('skiptocontent').classList.add('focus');
+	}
+});
+
+document.getElementById('skiptocontent').addEventListener('blur', function() {
+	this.classList.remove('focus')
+})
