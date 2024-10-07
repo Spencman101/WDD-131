@@ -7,7 +7,7 @@
     --text-dark: #333;
     --text-light: #ebebeb;
     --primary-font: Arial, Helvetica,sans-serif;
-    --secondary-font: Mooli, sans-serif;
+    --secondary-font: "Mooli", sans-serif;
     }
 
 * {
@@ -62,14 +62,9 @@ ul, main {
 }
 
 button {
-    pointer-events: none;
     background: none;
     border: none;
     font-size: 20px;
-}
-
-.menu-hide {
-    display: none;
 }
 
 .viewer {
@@ -113,7 +108,7 @@ button {
       flex: 50%;
       max-width: 50%;
     }
-    .menu-hide {
+    .menu {
         display: none;
     }
 }
@@ -128,7 +123,7 @@ button {
     .menu-button {
         display: none;
     }
-    .menu-hide {
+    .menu {
         display: flex;
         flex-direction: row;
     }
