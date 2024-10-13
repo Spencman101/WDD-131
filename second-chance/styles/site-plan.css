@@ -1,33 +1,34 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a42212;
-  --accent2-color: white;
+  --primary-color: #D6D6D8;
+  --secondary-color: #3A3B3F;
+  --accent1-color: #A0361B;
+  --accent2-color: #114B2C;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Kanit";
+  --paragraph-font: Ubuntu, "Kanit", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
-    --primary-color
+    --secondary-color
   ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  --headline-color-on-color: var(--primary-color); /* headlines on a colored background */
   --paragraph-color-on-white: var(
-    --primary-color
+    --secondary-color
   ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
-  --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: var(--primary-color);
+  --paragraph-color-on-color: var(--primary-color); /* paragraph text on a colored background */
+  --paragraph-background-color: var(--secondary-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-background-color: var(--accent1-color);
+  --nav-hover-link-color: --primary-color;
+  --nav-hover-background-color: var(--accent2-color);
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
