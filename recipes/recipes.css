@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #1B98E0;
+    --accent-color: #333333;
+    --text-color: #59c3c3;
+    --text-black: #333333;
+    --font: Arial, sans-serif, "Arima";
+}
+
+* {
+    font-family: Arial, sans-serif;
+    color: var(--text-black);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1em;
+}
+
+header h1 {
+    font-family: "Arima", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 80px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+}
+
+.search input {
+    padding: 0.5em;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search img {
+    width: 30px;
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+    border-radius: 0px 5px 5px 0px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid grey;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: "Arima", Arial;
+    line-height: 20px;
+    margin-top: 1em;
+}
+
+.recipe {
+    border: 1px solid var(--accent-color);
+    padding: 1em;
+    margin-bottom: 1.5em;
+    text-align: left;
+    justify-content: left;
+    width: 75%;
+}
+
+.recipe img {
+    border-radius: 5px;
+}
+
+.tags {
+    margin-bottom: 0.5em;
+    display: flex;
+    list-style-type: none;
+}
+
+.tags li {
+    border: 1px solid var(--accent-color);
+    padding: 0.5em;
+}
+
+.rating {
+    margin-bottom: 0.5em;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.social {
+    display: flex;
+}
+
+.social a{
+    margin: 0 0.5em;
+    width: 50px;
+}
+
+footer a {
+    font-size: 0.6em;
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    * {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    * {
+        max-width: 960px;
+        align-content: center;
+    }
+}
