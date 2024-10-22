@@ -74,7 +74,6 @@ hr {
 
 main {
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -87,15 +86,14 @@ h2 a{
 }
 
 .recipe {
-    padding: 1em;
-    margin-bottom: 1.5em;
+    display: flex;
     text-align: left;
     justify-content: left;
-    width: 75%;
-    display: flex;
-    align-items: center;
     flex-direction: column;
     border: 1px solid var(--accent-color);
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 75%;
 }
 
 .tags {
@@ -139,7 +137,7 @@ img {
     max-width: 100%;
 }
 
-.description {
+.recipe_description {
     display: none;
 }
 
@@ -149,13 +147,17 @@ img {
         justify-content: space-between;
     }
     .recipe {
-        flex-direction: row;
+        display: flex;
+        /* flex-direction: row; */
         flex-wrap: wrap;
     }
     .recipe img {
         width: 60%;
         height: 100%;
         align-self: flex-start;
+    }
+    .recipe_description {
+        display: contents;
     }
 }
 

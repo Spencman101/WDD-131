@@ -64,7 +64,7 @@ function recipeTemplate(recipe) {
 		<h2><a href="#">${recipe.name}</a></h2>
 		${ratingTemplate(recipe.rating)}
 		</p>
-		<p class="recipe__description">
+		<p class="recipe_description">
         	${recipe.description}
 		</p>
 	</figcaption>
@@ -76,7 +76,7 @@ console.log(recipeTemplate(recipe));
 
 function renderRecipes(recipeList) {
 	// get the element we will output the recipes into
-	const mainRecipe = document.body.querySelector(".recipe")
+	const mainRecipe = document.body.querySelector(".recipe_list")
 	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
 
 	// Set the HTML strings as the innerHTML of our output element.
