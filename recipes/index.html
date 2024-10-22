@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://spencman101.github.io/WDD-131/recipes/index.html">
     <meta name="twitter:card" content="summary_large_image">
     <title>Recipes</title>
-    <script src="recipes.js"></script>
+    <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="recipes.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
         <img src="images/recipe-book.png" alt="recipe-book">
         <h1>Recipe Book</h1>
     </header>
+    <div class="search">
+        <form>
+            <input type="text" id="recipe" name="recipe" placeholder="Find a recipe"/>
+        </form>
+        <img src="images/search.svg" alt="Search">
+    </div>
+    <hr>
     <main>
-        <div class="search">
-            <form>
-                <input type="text" id="recipe" name="recipe" placeholder="Find a recipe"/>
-            </form>
-            <img src="images/search.svg" alt="Search">
-        </div>
-        <hr>
         <div class="recipe">
-            <img src="images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffle">
+            <!-- <img src="images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffle">
             <div class="inner_recipe">
                 <ul class="tags">
                     <li>Waffles</li>
@@ -48,11 +48,12 @@
                     <span aria-hidden="true" class="icon-star-empty">⭐</span>
                     <span aria-hidden="true" class="icon-star-empty">☆</span>
                 </span>
-                <p>'Add the egg yolks, oil, salt, cayenne, sugar, ginger, shallots, sweet potatoes (steam and mash before), and milk and mix well.',
+                <p class="description">
+                    'Add the egg yolks, oil, salt, cayenne, sugar, ginger, shallots, sweet potatoes (steam and mash before), and milk and mix well.',
                     'Next add the cornmeal, chives, and flour and baking powder',
                     'Whip the egg whites until stiff and fold in',
                     'Cook until golden brown in a waffle iron. Serve with butter and Wilted Greens or Honey.'</p>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer>
