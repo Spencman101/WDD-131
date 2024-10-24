@@ -78,7 +78,7 @@ function renderRecipes(recipeList) {
 	// get the element we will output the recipes into
 	const mainRecipe = document.body.querySelector(".recipe_list")
 	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
-
+	mainRecipe.innerHTML = "";
 	// Set the HTML strings as the innerHTML of our output element.
 	recipes.forEach((recipe) => {
 		const newRecipe = document.createElement('div');
@@ -96,19 +96,24 @@ function init() {
 }
 init();
 
-// function filter(query) {
-// 	const filtered = recipes.filter(filterFunction)
-// 	// sort by name
-// 	const sorted = filtered.sort(sortFunction)
-// 		return sorted
+document.querySelector('form').addEventListener("submit",searchHandler)
 
-// }
+function filter(query) {
+    const filtered = recipes.filter(recipe => {
+        return recipe.name.toLowerCase().includes(query) ||
+               recipe.description.toLowerCase().includes(query) ||
+               (recipe.tags && recipe.tags.find(tag => tag.toLowerCase().includes(query))) || // Check if tags exist
+               (recipe.ingredients && recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query))); // Check if ingredients exist
+    });
+    // sort by name
+    const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
+    return sorted;
+}
 
-// function searchHandler(e) {
-// 	e.preventDefault()
-// 	// get the search input
-//   // convert the value in the input to lowercase
-//   // use the filter function to filter our recipes
-//   // render the filtered list
 
-// }
+function searchHandler(e) {
+    e.preventDefault(); // Prevent form submission
+    const query = document.querySelector('#recipe').value.toLowerCase(); // Correctly get the input value
+    const filteredRecipes = filter(query);
+    renderRecipes(filteredRecipes); // Render the filtered results
+}
