@@ -63,6 +63,7 @@ header {
 nav a {
     text-align: center;
     text-decoration: none;
+    align-self: center;
     padding: 35px;
     color: var(--primary-color);
 }
@@ -88,8 +89,9 @@ nav a:hover {
 }
 
 .jeeps_main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .karma_moab, .sabotage_moab {
     width: 48vw;
@@ -107,6 +109,7 @@ nav a:hover {
 .past-rebuilds {
     box-sizing:border-box;
     margin: 0;
+    margin-top: 50px;
 }
 .mySlides.fade {
     display: grid;
@@ -177,15 +180,12 @@ nav a:hover {
     animation-duration: 1.5s;
 }
 
-#our_story * {
-    margin: 0;
-    padding: 0;
-}
 #our_story h1 {
     grid-column: 1/3;
 }
 #our_story {
     margin: 50px;
+    padding: 0;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 10px;
@@ -208,17 +208,17 @@ nav a:hover {
     padding: 10px;
 }
 footer {
-    background-color:var(--primary-color);
-    color:var(--accent1-color);
+    background-color:var(--accent1-color);
+    color:var(--primary-color);
     font-size: 1em;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 footer a {
-    color:var(--accent1-color);
+    color:var(--primary-color);
     text-decoration: none;
 }
 footer a:hover{
