@@ -2,9 +2,9 @@
 
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #1B98E0;
+    --secondary-color: #1884c3;
     --accent-color: #333333;
-    --text-color: #1B98E0;
+    --text-color: #1884c3;
     --text-black: #333333;
     --font: Arial, sans-serif, "Arima";
 }
@@ -136,7 +136,7 @@ footer {
 }
 
 .social a{
-    margin: 0 0.5em;
+    margin: 0 1em;
     width: 50px;
 }
 
