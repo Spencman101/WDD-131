@@ -49,8 +49,9 @@ nav {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 .logo {
@@ -69,9 +70,23 @@ nav a:hover {
     color:var(--primary-color);
     background-color:var(--accent2-color);
 }
-.main_p {
-    text-align: center;
+
+.first_impression {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
 }
+
+.first_impression img {
+    width: 80%;
+}
+
+.first_impression p {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
 .jeeps_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
