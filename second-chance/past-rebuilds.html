@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Rebuilds</title>
+    <script defer src="main.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -21,40 +22,41 @@
     </header>
     <main class="past-rebuilds">
         <div id="slideshow-container">
-                <div class="mySlides fade">
+                <!-- <div class="rebuild fade">
                     <div class="numbertext">1 / 4</div>
                     <img src="images/vehicle/bayou5.jpg" style="width:100%" alt="bayou_before">
                     <img src="images/vehicle/bayou1.jpeg" style="width:100%" alt="bayou_after">
                     <div class="text"></div>
                 </div>
                 </div>
-                <div class="mySlides fade">
+                <div class="rebuild fade">
                     <div class="numbertext">2 / 4</div>
                     <img src="images/vehicle/karma2.jpg" style="width:100%" alt="karma_before">
                     <img src="images/vehicle/karma3.jpg" style="width:100%" alt="karma_after">
                     <div class="text"></div>
                 </div>
-                <div class="mySlides fade">
+                <div class="rebuild fade">
                     <div class="numbertext">3 / 4</div>
                     <img src="images/vehicle/sabotage2.jpg" style="width:100%" alt="sabotage_before">
                     <img src="images/vehicle/sabotage3.jpg" style="width:100%" alt="sabotage_after">
-                    <div class="text">I was able to build and design my dream Jeep with my dad. It was a fun process learning more about cars and how to fix them. Being able to be a part of the whole process was such a wonderful experience. My blood, sweat, and tears went into this project but, I wouldn't have it any other way. It gave me the opportunity to learn and grow and I wouldn't change this experience for the world. </div>
+                    <div class="text">I was able to build and design my dream Jeep with my dad. It was a fun process learning more about cars and how to fix them. Being able to be a part of the whole process was such a wonderful experience. My blood, sweat, and tears went into this project but, I wouldn't have it any other way. It gave me the opportunity to learn and grow and I wouldn't change this experience for the world.</div>
                 </div>
-                <div class="mySlides fade">
+                <div class="rebuild fade">
                     <div class="numbertext">4 / 4</div>
                     <img src="images/vehicle/solstice1.jpg" style="width:100%" alt="solstice_before">
                     <img src="images/vehicle/solstice2.jpg" style="width:100%" alt="solstice_after">    
                     <div class="text"></div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div> -->
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <br>
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
-          </div>
+        </div>
           
     </main>
     <footer>
@@ -70,35 +72,5 @@
             </a>
         </div>
     </footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "grid";
-        dots[slideIndex-1].className += " active";
-        }
-    </script>
 </body>
 </html>

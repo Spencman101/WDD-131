@@ -1,0 +1,80 @@
+const rebuilds = [
+    {
+        id: 1,
+        beforeSrc: 'images/vehicle/bayou5.jpg',
+        beforeAlt: 'bayou_before',
+        afterSrc: 'images/vehicle/bayou1.jpeg',
+        afterAlt: 'bayou_after',
+        description: ""
+    },
+    {
+        id: 2,
+        beforeSrc: 'images/vehicle/karma2.jpg',
+        beforeAlt: 'karma_before',
+        afterSrc: 'images/vehicle/karma3.jpg',
+        afterAlt: 'karma_after',
+        description: ""
+    },
+    {
+        id: 3,
+        beforeSrc: 'images/vehicle/sabotage2.jpg',
+        beforeAlt: 'sabotage_before',
+        afterSrc: 'images/vehicle/sabotage3.jpg',
+        afterAlt: 'sabotage_after',
+        description: "I was able to build and design my dream Jeep with my dad. It was a fun process learning more about cars and how to fix them. Being able to be a part of the whole process was such a wonderful experience. My blood, sweat, and tears went into this project, but I wouldn't have it any other way. It gave me the opportunity to learn and grow and I wouldn't change this experience for the world."
+    },
+    {
+        id: 4,
+        beforeSrc: 'images/vehicle/solstice1.jpg',
+        beforeAlt: 'solstice_before',
+        afterSrc: 'images/vehicle/solstice2.jpg',
+        afterAlt: 'solstice_after',
+        description: ''
+    },
+];
+
+const slideshowContent = document.body.querySelector('#slideshow-container');
+
+rebuilds.forEach((rebuild) => {
+	const newRebuild = document.createElement('div');
+	newRebuild.classList.add('rebuild');
+	
+	const rebuildHTML = `
+		<div class="numbertext">${rebuild.id} / ${rebuilds.length}</div>
+        <img src="${rebuild.beforeSrc}" style="width:100%" alt="${rebuild.beforeAlt}">
+        <img src="${rebuild.afterSrc}" style="width:100%" alt="${rebuild.afterAlt}">
+        <div class="text">${rebuild.description}</div>
+	`;
+
+	newRebuild.innerHTML = rebuildHTML;
+	slideshowContent.appendChild(newRebuild);
+});
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("rebuild");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "grid";
+    dots[slideIndex-1].className += " active";
+}
