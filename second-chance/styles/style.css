@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* Changes Needed:
-Make website responsive (screen sizes wide/small), Change header/navigation with logo/title with links below,
-Split up mission statement, Make header underline instead of green block, Font sizes within Footer.
-Add clickable expansion to image courosel*/
+Make website responsive (screen sizes wide/small), Split up mission statement, 
+Font sizes within Footer, Add clickable expansion to image courosel*/
 
 
 * {
@@ -20,10 +19,6 @@ Add clickable expansion to image courosel*/
     --paragraph-font: Ubuntu, "Kanit", sans-serif;
 }
 
-.home-title {
-    font-size: 2em;
-    margin-top: 10px;
-}
 body {
     font-family: "Ubuntu", 'Kanit', sans-serif;
     background-color:var(--primary-color);
@@ -35,6 +30,8 @@ body {
 h1, h2 {
     font: 1.5em 'Kanit';
     text-align: center;
+    height: auto;
+    margin: 0;
 }
 .home-title {
     font: 2em 'Kanit';
@@ -47,35 +44,47 @@ h1, h2 {
     border: 10px solid var(--accent2-color);
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
 .logo {
-    display: inline-block;
-    place-items: center;
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     text-align: center;
     text-decoration: none;
     align-self: center;
-    padding: 35px;
+    padding: 10px 15px;
+    font-size: 1em;
     color: var(--primary-color);
 }
+
+.top_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
 nav a:hover {
-    color:var(--primary-color);
-    background-color:var(--accent2-color);
+    text-decoration: underline var(--accent2-color);
 }
 
 .first_impression {
