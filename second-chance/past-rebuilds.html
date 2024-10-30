@@ -7,7 +7,96 @@
     <meta name="description" content="This page highlights past completed projects showing starting and ending pictures, as well as featuring the experience of those for each individual jeep.">
     <title>Past Rebuilds</title>
     <script defer src="main.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #D6D6D8;
+            --secondary-color: #3A3B3F;
+            --accent1-color: #A0361B;
+            --accent2-color: #114B2C;
+            --heading-font: "Kanit";
+            --paragraph-font: Ubuntu, "Kanit", sans-serif;
+        }
+        body {
+            font-family: "Ubuntu", 'Kanit', sans-serif;
+            background-color: var(--primary-color);
+            font-size: 32px;
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--accent1-color);
+            color: var(--primary-color);
+            padding: 10px;
+        }
+        .text {
+            color: var(--secondary-color);
+            font-size: 0.5em;
+            padding: 8px 12px;
+            width: 90%;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            grid-column: 1/3;
+        }
+        .numbertext {
+            display: none;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: var(--accent1-color);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .past-rebuilds {
+            box-sizing:border-box;
+            margin: 0;
+            margin-top: 50px;
+        }
+        .rebuild {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .rebuild {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            background-color: var(--primary-color);
+            font-weight: bold;
+            font-size: 0.5em;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            color: var(--accent1-color);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header>

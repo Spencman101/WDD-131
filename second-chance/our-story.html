@@ -6,7 +6,52 @@
     <meta name="author" content="Spencer Reynolds">
     <meta name="description" content="This page discusses the background of the Reynolds family, who head the organizaiton, and how they came to be where they are now. It discusses their own journey and experience with the foster system.">
     <title>Our Story</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #D6D6D8;
+            --secondary-color: #3A3B3F;
+            --accent1-color: #A0361B;
+            --accent2-color: #114B2C;
+            --heading-font: "Kanit";
+            --paragraph-font: Ubuntu, "Kanit", sans-serif;
+        }
+        body {
+            font-family: "Ubuntu", 'Kanit', sans-serif;
+            background-color: var(--primary-color);
+            font-size: 32px;
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--accent1-color);
+            color: var(--primary-color);
+            padding: 10px;
+        }
+        #our_story {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #our_story img {
+            max-width: 100%;
+            height: auto;
+            border: 10px solid var(--accent2-color);
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header>

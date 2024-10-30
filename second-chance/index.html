@@ -6,7 +6,87 @@
     <meta name="author" content="Spencer Reynolds">
     <meta name="description" content="This page explains the mission of second chance, a non profit geared towards foster teens. It provides contact information to reach out to the runnner of the organization as well.">
     <title>Main Page</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #D6D6D8;
+            --secondary-color: #3A3B3F;
+            --accent1-color: #A0361B;
+            --accent2-color: #114B2C;
+            --heading-font: "Kanit";
+            --paragraph-font: Ubuntu, "Kanit", sans-serif;
+        }
+        body {
+            font-family: "Ubuntu", 'Kanit', sans-serif;
+            background-color: var(--primary-color);
+            font-size: 32px;
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--accent1-color);
+            color: var(--primary-color);
+            padding: 10px;
+        }
+        .top_row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        h1 {
+            font: 1.25em 'Kanit';
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: var(--primary-color);
+        }
+        nav a:hover {
+            text-decoration: underline var(--accent2-color);
+        }
+        .first_impression {
+            display: flex;
+            flex-direction: row;
+            padding: 0.5em;
+            text-align: center;
+        }
+        .first_impression p {
+            width: 50%;
+            align-self: center;
+            line-height: 1em;
+            font-size: 0.70em;
+        }
+        .main_bayou img {
+            border: 10px solid var(--accent2-color);
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header>
