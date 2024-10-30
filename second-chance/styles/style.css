@@ -24,19 +24,24 @@ body {
     padding: 0;
 }
 h1, h2 {
-    font: 1.25em 'Kanit';
+    font-family: var(--heading-font);
+    font: 1.25em;
     text-align: center;
-    height: auto;
     margin: 0;
 }
 .home-title {
-    font: 2em 'Kanit';
+    font-family: var(--heading-font);
+    font-size: 2em;
 }
 .main_bayou {
     display: block;
     text-align: center;
 }
 .main_img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
     border: 10px solid var(--accent2-color);
 }
 
@@ -108,7 +113,9 @@ nav a:hover {
     justify-content: space-around;
 }
 .jeeps_main img {
+    width: 48%;
     max-width: 48%;
+    height: auto;
     object-fit: cover;
     border: 10px solid var(--accent2-color);
 }
