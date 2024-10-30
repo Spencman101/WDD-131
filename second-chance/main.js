@@ -41,8 +41,8 @@ rebuilds.forEach((rebuild) => {
 	
 	const rebuildHTML = `
 		<div class="numbertext">${rebuild.id} / ${rebuilds.length}</div>
-        <img src="${rebuild.beforeSrc}" style="width:100%" alt="${rebuild.beforeAlt}">
-        <img src="${rebuild.afterSrc}" style="width:100%" alt="${rebuild.afterAlt}">
+        <img src="${rebuild.beforeSrc}" style="width:100%" width="500" height="300" alt="${rebuild.beforeAlt}">
+        <img src="${rebuild.afterSrc}" style="width:100%" width="500" height="300" alt="${rebuild.afterAlt}">
         <div class="text">${rebuild.description}</div>
 	`;
 
