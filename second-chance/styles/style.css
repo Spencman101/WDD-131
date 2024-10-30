@@ -126,11 +126,14 @@ nav a:hover {
     font-size: 0.6em;
     justify-content: space-around;
     max-width: 100%;
-    
 }
 
 .contact div {
     display: flex;
+}
+.contact img {
+    width: 64px;
+    height: 64px;
 }
 
 .contact p {
