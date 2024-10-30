@@ -5,7 +5,7 @@ const rebuilds = [
         beforeAlt: 'bayou_before',
         afterSrc: 'images/vehicle/bayou1.jpeg',
         afterAlt: 'bayou_after',
-        description: ""
+        description: "While our family was living in Louisiana Covid hit and we needed something to do with our time. Dad decided to buy a salvaged jeep and rebuild it as a family. Through this project, I watched him teach our kids about cars, tools, and the processes of taking something old and broken and giving it a second chance. My favorite part was watching my children and husband laugh and smile while strengthening their relationships with each other."
     },
     {
         id: 2,
